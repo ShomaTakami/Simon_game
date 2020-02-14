@@ -1,0 +1,138 @@
+body {
+  text-align: center;
+  background-color: #061525;
+}
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #fef2bf;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+#score {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  color: #fef2bf;
+  margin: 0%;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #level-title {
+    font-size: 1.5rem;
+    margin: 10%;
+  }
+
+  .container {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: inline-block;
+  }
+
+  .btn {
+    margin: 5px;
+    height: 7rem;
+    width: 7rem;
+    border: 5px solid black;
+    border-radius: 20%;
+  }
+  #score {
+    font-size: 1.5rem;
+    margin: 10%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #level-title {
+    font-size: 1.3rem;
+    margin: 10%;
+  }
+
+  .container {
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: inline-block;
+  }
+
+  .btn {
+    margin: 10px;
+    height: 140px;
+    width: 140px;
+    border: 7px solid black;
+    border-radius: 20%;
+  }
+  #score {
+    font-size: 2rem;
+    margin: 10%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #level-title {
+    font-size: 3rem;
+    margin: 5%;
+  }
+
+  .container {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+
+  .btn {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+
+  #score {
+    font-size: 2rem;
+    margin: 0%;
+  }
+}
