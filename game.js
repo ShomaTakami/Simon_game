@@ -7,13 +7,13 @@ var started = false;
 var level = 0;
 var score_max = 0;
 
-$(document).keypress(function() {
+function startClick() {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
   }
-});
+}
 
 $(".btn").click(function() {
   var userChosenColour = $(this).attr("id");
@@ -41,7 +41,7 @@ function checkAnswer(currentLevel) {
     setTimeout(() => {
       $("body").removeClass("game-over");
     }, 200);
-    $("h1").text("Press Any Key to Restart");
+    $("h1").text("Press START to Restart");
     scoreCheck();
     startOver();
   }

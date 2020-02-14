@@ -8,6 +8,21 @@ body {
   margin: 5%;
   color: #fef2bf;
 }
+#start_button {
+  border: 3px solid #fef2bf;
+  color: #fef2bf;
+  background: none;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.4rem;
+  padding: 10px;
+  margin: 0;
+}
+#start_button:hover {
+  background: #fef2bf59;
+}
+#start_button:active {
+  background: black;
+}
 
 .container {
   display: block;
@@ -59,7 +74,14 @@ body {
 @media only screen and (max-width: 600px) {
   #level-title {
     font-size: 1.5rem;
-    margin: 10%;
+    margin: 4%;
+    margin-bottom: 5%;
+  }
+  #start_button {
+    border: 1.5px solid #fef2bf;
+    font-size: 1.6rem;
+    padding: 6px;
+    margin: 0;
   }
 
   .container {
@@ -108,12 +130,12 @@ body {
     margin: 10%;
   }
 }
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #level-title {
     font-size: 3rem;
     margin: 5%;
+    margin-bottom: 2%;
   }
 
   .container {
